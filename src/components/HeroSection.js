@@ -69,7 +69,7 @@ export default function HeroSection() {
             .querySelector("#mission-section")
             ?.scrollIntoView({ behavior: "smooth" })
         }
-        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-yellow-400 hover:text-yellow-300 transition"
+        className="absolute bottom-6 left-1/2  transform -translate-x-1/2 text-yellow-400 hover:text-yellow-300 transition"
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
         style={{ opacity: fadeArrow }}
