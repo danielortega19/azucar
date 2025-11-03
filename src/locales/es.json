@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": "Bienvenidos a Azúcar",
+    "subtitle": "Donde el ritmo cubano se encuentra con la vida nocturna de Las Vegas, disfruta, baila y celebra la vida al estilo de La Habana.",
+     "button": "Explorar el Menú"
+  },
+  "mission": {
+    "title": "Nuestra Misión",
+    "text": "Elevar los espíritus a través de una fusión de la vitalidad cubana y la maestría en cócteles, inspirando con cada sorbo cuidadosamente elaborado. Siente la energía de La Habana, sin necesidad de pasaporte."
+  },
+  "experience": {
+    "title": "Descubre la Experiencia",
+    "card1Title": "🍹 Cócteles Exclusivos",
+    "card1Text": "Desde mojitos hasta daiquiris, disfruta de cócteles artesanales inspirados en Cuba que celebran el sabor auténtico.",
+    "card2Title": "🎶 Música y Baile en Vivo",
+    "card2Text": "Sumérgete en salsa, rumba y ritmos cubanos que traen el espíritu de La Habana al Strip.",
+    "card3Title": "💨 Lounge de Puros",
+    "card3Text": "Relájate en nuestro patio con puros cubanos premium y una vista de las luces de Las Vegas."
+  },
+   "nav": {
+    "home": "Inicio",
+    "about": "Sobre Nosotros",
+    "menu": "Menú",
+    "events": "Eventos",
+    "contact": "Contacto"
+  },
+    "about": {
+    "title": "Nuestra Historia",
+    "paragraph1": "Nacido en las vibrantes calles de La Habana y las deslumbrantes noches de Las Vegas,",
+    "paragraph1b": " combina la calidez clásica cubana con un toque moderno.",
+    "paragraph2": "Desde los ritmos de salsa en vivo hasta los cócteles artesanales, cada noche aquí es una celebración de la vida, el sabor y el ritmo donde la pasión de Cuba se encuentra con el pulso de Las Vegas.",
+    "paragraph3": "Cruza nuestras puertas y déjate transportar energía de la vieja Habana, ambiente moderno de Vegas y un espíritu acogedor que se siente como en casa.",
+    "imageAlt": "Ambiente de Azúcar en La Habana"
+  },
+   "menu": {
+    "title": "Cócteles Exclusivos",
+    "drinks": {
+      "mojito": {
+        "name": "Mojito Tradicional",
+        "desc": "Menta fresca, lima y ron Havana Club"
+      },
+      "espresso": {
+        "name": "Café Cubano Martini",
+        "desc": "Espresso, ron y un toque de azúcar"
+      },
+      "mule": {
+        "name": "El Azúcar Mule",
+        "desc": "Cerveza de jengibre, lima y ron oscuro"
+      },
+      "guava": {
+        "name": "Daiquirí de Guayaba",
+        "desc": "Suave guayaba tropical con ron ligero"
+      }
+    }
+    },
+     "events": {
+    "hero": {
+      "title": "Noches Latinas en Vivo",
+      "subtitle": "Vive el latido de La Habana, aquí mismo en Azúcar."
+    },
+    "sectionTitle": "Próximos Eventos",
+    "cards": {
+      "salsa": {
+        "title": "Viernes de Salsa",
+        "date": "Todos los viernes • 9PM",
+        "desc": "Salsa y bachata en vivo bajo las luces de La Habana."
+      },
+      "jazz": {
+        "title": "Domingos de Cigarros y Jazz",
+        "date": "Domingos • 7PM",
+        "desc": "Jazz suave y cigarros cubanos en nuestro patio al aire libre."
+      },
+      "havana": {
+        "title": "Noches de La Habana",
+        "date": "Último sábado de cada mes",
+        "desc": "Pista de baile completa, mojitos y DJs hasta las 2AM."
+      }
+    }
+  },
+   "contact": {
+    "hero": {
+      "title": "Contáctanos",
+      "subtitle": "Reserva tu noche. Celebra con nosotros. Creamos recuerdos al estilo habanero."
+    },
+    "instructions": "¿Listo para hacer una reserva o celebrar un evento privado?",
+    "orMessage": "o envíanos un mensaje abajo.",
+    "form": {
+      "name": "Nombre",
+      "email": "Correo electrónico",
+      "message": "Mensaje",
+      "submit": "Enviar mensaje"
+    },
+    "toast": "¡Mensaje enviado con éxito!",
+    "errors": {
+      "name": "El nombre es obligatorio",
+      "email": "El correo es obligatorio",
+      "emailInvalid": "Correo electrónico no válido",
+      "message": "El mensaje no puede estar vacío"
+    }
+  }
+}

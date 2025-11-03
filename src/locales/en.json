@@ -1,0 +1,101 @@
+{
+  "hero": {
+    "title": "Welcome to Azúcar",
+    "subtitle": "Where Cuban rhythm meets Vegas nightlife, indulge, dance, and celebrate life the Havana way.",
+    "button": "Explore Our Menu"
+  },
+  "mission": {
+    "title": "Our Mission",
+    "text": "To elevate spirits through a fusion of Cuban vibrancy and cocktail mastery, igniting inspiration with every artfully crafted sip. Step into the energy of Havana, no passport required."
+  },
+  "experience": {
+    "title": "Discover the Experience",
+    "card1Title": "🍹 Signature Cocktails",
+    "card1Text": "From mojitos to daiquiris, indulge in handcrafted Cuban-inspired drinks that celebrate authentic flavor.",
+    "card2Title": "🎶 Live Music & Dance",
+    "card2Text": "Immerse yourself in live salsa, rumba, and Cuban beats that bring Havana’s rhythm to the Strip.",
+    "card3Title": "💨 Cigar Lounge",
+    "card3Text": "Relax on our outdoor patio with premium Cuban cigars and a view of the Vegas lights."
+  },
+ "nav": {
+    "home": "Home",
+    "about": "About",
+    "menu": "Menu",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "about": {
+    "title": "Our Story",
+    "paragraph1": "Born from the vibrant streets of Havana and the dazzling nights of Las Vegas,",
+    "paragraph1b": " blends classic Cuban warmth with modern flair.",
+    "paragraph2": "From live salsa rhythms to handcrafted cocktails, every night here is a celebration of life, flavor, and rhythm where the passion of Cuba meets the pulse of Vegas.",
+    "paragraph3": "Step through our doors and be transported old Havana energy, modern Vegas vibes, and a welcoming spirit that feels like home.",
+    "imageAlt": "Azúcar Havana vibes"
+  },
+  "menu": {
+    "title": "Signature Cocktails",
+    "drinks": {
+      "mojito": {
+        "name": "Mojito Tradicional",
+        "desc": "Fresh mint, lime, and Havana Club rum"
+      },
+      "espresso": {
+        "name": "Café Cubano Martini",
+        "desc": "Espresso, rum, and a touch of sugar"
+      },
+      "mule": {
+        "name": "El Azúcar Mule",
+        "desc": "Ginger beer, lime, and dark rum"
+      },
+      "guava": {
+        "name": "Guava Daiquiri",
+        "desc": "Smooth tropical guava with light rum"
+      }
+    }
+  },
+  "events": {
+    "hero": {
+      "title": "Live Latin Nights",
+      "subtitle": "Experience the heartbeat of Havana, right here at Azúcar."
+    },
+    "sectionTitle": "Upcoming Events",
+    "cards": {
+      "salsa": {
+        "title": "Salsa Fridays",
+        "date": "Every Friday • 9PM",
+        "desc": "Live salsa and bachata under the Havana lights."
+      },
+      "jazz": {
+        "title": "Cigar & Jazz Sundays",
+        "date": "Sundays • 7PM",
+        "desc": "Smooth jazz and Cuban cigars on our open patio."
+      },
+      "havana": {
+        "title": "Havana Nights",
+        "date": "Last Saturday of each month",
+        "desc": "Full dance floor, mojitos, and DJs until 2AM."
+      }
+    }
+  },
+  "contact": {
+    "hero": {
+      "title": "Get in Touch",
+      "subtitle": "Reserve your night. Host your celebration. Let’s make memories the Havana way."
+    },
+    "instructions": "Ready to make a reservation or host your private event?",
+    "orMessage": "or send us a message below.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "toast": "Message Sent Successfully!",
+    "errors": {
+      "name": "Name is required",
+      "email": "Email is required",
+      "emailInvalid": "Invalid email address",
+      "message": "Message cannot be empty"
+    }
+  }
+}

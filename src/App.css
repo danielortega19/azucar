@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+html, body {
+  overflow-y: auto;
+}
+
+body:has(.no-scroll) {
+  overflow: hidden;
+}
+html, body, #root {
+  background-color: #000;
+  color-scheme: dark;
+}
+
