@@ -83,6 +83,12 @@ export default function Navbar() {
             {t("nav.menu")}
           </Link>
           <Link
+            to="/patio"
+            className="text-gray-200 hover:text-yellow-400 transition duration-300"
+          >
+            {t("nav.patio")}
+          </Link>
+          <Link
             to="/events"
             className="text-gray-200 hover:text-yellow-400 transition duration-300"
           >
@@ -144,6 +150,13 @@ export default function Navbar() {
               onClick={() => setMenuOpen(false)}
             >
               {t("nav.menu")}
+            </Link>
+            <Link
+              to="/patio"
+              className="block text-gray-200 hover:text-yellow-400 transition duration-300"
+              onClick={() => setMenuOpen(false)}
+            >
+              {t("nav.patio")}
             </Link>
             <Link
               to="/events"

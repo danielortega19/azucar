@@ -8,6 +8,7 @@ import About from "../pages/About";
 import Menu from "../pages/Menu";
 import Events from "../pages/Events";
 import Contact from "../pages/Contact";
+import Patio from "../pages/Patio";
 
 export default function AnimatedRoutes() {
   const location = useLocation();
@@ -31,11 +32,54 @@ export default function AnimatedRoutes() {
       <PageTransitionOverlay isVisible={showOverlay} />
       <AnimatePresence mode="wait">
         <Routes location={location} key={location.pathname}>
-          <Route path="/" element={<motion.div {...transitionProps}><Home /></motion.div>} />
-          <Route path="/about" element={<motion.div {...transitionProps}><About /></motion.div>} />
-          <Route path="/menu" element={<motion.div {...transitionProps}><Menu /></motion.div>} />
-          <Route path="/events" element={<motion.div {...transitionProps}><Events /></motion.div>} />
-          <Route path="/contact" element={<motion.div {...transitionProps}><Contact /></motion.div>} />
+          <Route
+            path="/"
+            element={
+              <motion.div {...transitionProps}>
+                <Home />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/about"
+            element={
+              <motion.div {...transitionProps}>
+                <About />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/menu"
+            element={
+              <motion.div {...transitionProps}>
+                <Menu />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/events"
+            element={
+              <motion.div {...transitionProps}>
+                <Events />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/contact"
+            element={
+              <motion.div {...transitionProps}>
+                <Contact />
+              </motion.div>
+            }
+          />
+          <Route
+            path="/patio"
+            element={
+              <motion.div {...transitionProps}>
+                <Patio />
+              </motion.div>
+            }
+          />
         </Routes>
       </AnimatePresence>
     </>

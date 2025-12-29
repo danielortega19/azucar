@@ -1,9 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { getEventImages } from "../sanity/getImageByAlt";
 
 export default function About() {
   const { t } = useTranslation();
+  const [imageUrl, setImageUrl] = useState(null);
+
+  useEffect(() => {
+    async function loadImage() {
+      const img = await getEventImages("CubaCafeAboutUs");
+      if (img && img.url) {
+        setImageUrl(img.url);
+      }
+    }
+
+    loadImage();
+  }, []);
 
   return (
     <motion.div
@@ -58,10 +71,16 @@ export default function About() {
         >
           <div className="relative rounded-2xl overflow-hidden shadow-[0_0_25px_rgba(255,215,0,0.2)]">
             <motion.img
-              src="https://www.mullanlighting.com/media/blog/cafe-cuba-mullan-lighting.jpg"
+              src={
+                imageUrl ||
+                "https://www.mullanlighting.com/media/blog/cafe-cuba-mullan-lighting.jpg" // fallback if Sanity not loaded
+              }
               alt={t("about.imageAlt")}
               className="rounded-2xl shadow-[0_0_25px_rgba(255,215,0,0.3)] mx-auto mb-10 w-full md:w-3/4 object-cover"
-              whileHover={{ scale: 1.03, boxShadow: "0 0 40px rgba(255,215,0,0.4)" }}
+              whileHover={{
+                scale: 1.03,
+                boxShadow: "0 0 40px rgba(255,215,0,0.4)",
+              }}
               transition={{ duration: 0.4 }}
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent"></div>
