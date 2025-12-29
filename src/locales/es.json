@@ -2,7 +2,7 @@
   "hero": {
     "title": "Bienvenidos a Azúcar",
     "subtitle": "Donde el ritmo cubano se encuentra con la vida nocturna de Las Vegas, disfruta, baila y celebra la vida al estilo de La Habana.",
-     "button": "Explorar el Menú"
+    "button": "Explorar el Menú"
   },
   "mission": {
     "title": "Nuestra Misión",
@@ -17,14 +17,15 @@
     "card3Title": "💨 Lounge de Puros",
     "card3Text": "Relájate en nuestro patio con puros cubanos premium y una vista de las luces de Las Vegas."
   },
-   "nav": {
+  "nav": {
     "home": "Inicio",
     "about": "Sobre Nosotros",
     "menu": "Menú",
     "events": "Eventos",
-    "contact": "Contacto"
+    "contact": "Contacto",
+    "patio": "Patio"
   },
-    "about": {
+  "about": {
     "title": "Nuestra Historia",
     "paragraph1": "Nacido en las vibrantes calles de La Habana y las deslumbrantes noches de Las Vegas,",
     "paragraph1b": " combina la calidez clásica cubana con un toque moderno.",
@@ -32,7 +33,7 @@
     "paragraph3": "Cruza nuestras puertas y déjate transportar energía de la vieja Habana, ambiente moderno de Vegas y un espíritu acogedor que se siente como en casa.",
     "imageAlt": "Ambiente de Azúcar en La Habana"
   },
-   "menu": {
+  "menu": {
     "title": "Cócteles Exclusivos",
     "drinks": {
       "mojito": {
@@ -51,9 +52,14 @@
         "name": "Daiquirí de Guayaba",
         "desc": "Suave guayaba tropical con ron ligero"
       }
-    }
     },
-     "events": {
+    "intro": {
+      "heading": "Cócteles Artesanales con Sabor a La Habana",
+      "text1": "Cada cóctel en Azúcar es preparado a mano con ingredientes frescos, ron premium y la esencia auténtica de Cuba.",
+      "text2": "Desde mojitos refrescantes hasta clásicos cubanos, cada trago está lleno de ritmo, cultura y pasión."
+    }
+  },
+  "events": {
     "hero": {
       "title": "Noches Latinas en Vivo",
       "subtitle": "Vive el latido de La Habana, aquí mismo en Azúcar."
@@ -77,7 +83,7 @@
       }
     }
   },
-   "contact": {
+  "contact": {
     "hero": {
       "title": "Contáctanos",
       "subtitle": "Reserva tu noche. Celebra con nosotros. Creamos recuerdos al estilo habanero."
@@ -96,6 +102,37 @@
       "email": "El correo es obligatorio",
       "emailInvalid": "Correo electrónico no válido",
       "message": "El mensaje no puede estar vacío"
+    }
+  },
+  "patio": {
+    "sectionTitle": "Patio y Terraza",
+    "cards": {
+      "sunset": {
+        "title": "Atardeceres en el Patio",
+        "subtitle": "Cócteles bajo el cielo dorado",
+        "desc": "Disfruta de mojitos y daiquiris mientras el sol cae sobre Las Vegas, con el ambiente de La Habana al aire libre."
+      },
+      "music": {
+        "title": "Música en Vivo al Aire Libre",
+        "subtitle": "Salsa, son y ritmos cubanos",
+        "desc": "Baila bajo las estrellas con música en vivo y un ambiente íntimo en nuestro patio."
+      },
+      "nights": {
+        "title": "Noches en la Terraza",
+        "subtitle": "Luces, puros y buena compañía",
+        "desc": "Relájate con puros, buenos tragos y una vista única de la noche en Las Vegas."
+      },
+      "cigar": {
+        "title": "Lounge de Puros",
+        "subtitle": "Experiencia premium al aire libre",
+        "desc": "Relájate en nuestro lounge exterior con puros cubanos exclusivos y una vista de las luces de Las Vegas."
+      }
+    },
+    "hero": {
+      "title": "Nuestro Patio & Cigar Lounge",
+      "text": "Azúcar cuenta con un patio al aire libre inspirado en La Habana, donde los cócteles, la música y la brisa nocturna se encuentran bajo las luces de Las Vegas.",
+      "subtext": "Desde atardeceres dorados hasta noches de jazz y puros, el patio es el lugar perfecto para relajarte, celebrar y disfrutar de la experiencia completa de Azúcar.",
+      "imageAlt": "Patio exterior de Azúcar con ambiente cubano"
     }
   }
 }

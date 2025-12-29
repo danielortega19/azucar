@@ -17,12 +17,13 @@
     "card3Title": "💨 Cigar Lounge",
     "card3Text": "Relax on our outdoor patio with premium Cuban cigars and a view of the Vegas lights."
   },
- "nav": {
+  "nav": {
     "home": "Home",
     "about": "About",
     "menu": "Menu",
     "events": "Events",
-    "contact": "Contact"
+    "contact": "Contact",
+    "patio": "Patio"
   },
   "about": {
     "title": "Our Story",
@@ -51,6 +52,11 @@
         "name": "Guava Daiquiri",
         "desc": "Smooth tropical guava with light rum"
       }
+    },
+    "intro": {
+      "heading": "Crafted with Passion, Inspired by Havana",
+      "text1": "Every cocktail at Azúcar is handcrafted with fresh ingredients, premium rum, and timeless Cuban inspiration.",
+      "text2": "From refreshing mojitos to bold Cuban classics, every drink is mixed with rhythm, culture, and soul."
     }
   },
   "events": {
@@ -96,6 +102,37 @@
       "email": "Email is required",
       "emailInvalid": "Invalid email address",
       "message": "Message cannot be empty"
+    }
+  },
+  "patio": {
+    "hero": {
+      "title": "Our Patio & Cigar Lounge",
+      "text": "Azúcar features an open-air patio inspired by Havana, where cocktails, music, and the night breeze meet under the Vegas lights.",
+      "subtext": "From golden-hour sunsets to jazz and cigars, the patio is the perfect place to unwind, celebrate, and experience the full Azúcar vibe.",
+      "imageAlt": "Azúcar outdoor patio with Havana-inspired atmosphere"
+    },
+    "sectionTitle": "Patio Experience",
+    "cards": {
+      "sunset": {
+        "title": "Sunset Cocktails",
+        "subtitle": "Golden hour on the patio",
+        "desc": "Sip on signature Cuban-inspired cocktails as the sun sets over the city."
+      },
+      "music": {
+        "title": "Live Music Nights",
+        "subtitle": "Salsa, son & bolero",
+        "desc": "Enjoy live performances that bring the spirit of Havana straight to our patio."
+      },
+      "nights": {
+        "title": "Late Night Vibes",
+        "subtitle": "Under the stars",
+        "desc": "Cozy lighting, warm air, and the perfect soundtrack for unforgettable nights."
+      },
+      "cigar": {
+        "title": "Cigar Lounge",
+        "subtitle": "Premium experience outdoors",
+        "desc": "Relax in our outdoor lounge with exclusive Cuban cigars and a view of the Vegas lights."
+      }
     }
   }
 }

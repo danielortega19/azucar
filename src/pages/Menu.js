@@ -1,60 +1,106 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import MenuCard from "../components/MenuCard";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
+import { getEventImages } from "../sanity/getImageByAlt";
 
 export default function Menu() {
   const { t } = useTranslation();
+  const [images, setImages] = useState({});
+
+  useEffect(() => {
+    async function loadImages() {
+      const imgs = await getEventImages();
+      const map = {};
+      imgs.forEach((img) => (map[img.alt] = img.url));
+      setImages(map);
+    }
+    loadImages();
+  }, []);
 
   const drinks = [
     {
+      key: "Mojito",
       name: t("menu.drinks.mojito.name"),
       description: t("menu.drinks.mojito.desc"),
       price: 14,
-      image:
-        "https://i.blogs.es/a21ce1/mojito-cocktail-wooden-table/1024_2000.jpg?auto=format&fit=crop&w=900&q=80",
+      image: images["Mojito"],
     },
     {
+      key: "Expresso",
       name: t("menu.drinks.espresso.name"),
       description: t("menu.drinks.espresso.desc"),
       price: 16,
-      image:
-        "https://coctelia.com/wp-content/uploads/2019/07/espresso-martini-1024x768.jpg?pid=Api&P=0&h=180?auto=format&fit=crop&w=900&q=80",
+      image: images["Expresso"],
     },
     {
+      key: "CubanMule",
       name: t("menu.drinks.mule.name"),
       description: t("menu.drinks.mule.desc"),
       price: 15,
-      image:
-        "https://1.bp.blogspot.com/-51qbDUUzpR0/VeRpb72G1vI/AAAAAAAAY_Q/Vp9igfaLHQs/s1600/tequila-cocktails.jpg",
+      image: images["CubanMule"],
     },
     {
+      key: "Guava",
       name: t("menu.drinks.guava.name"),
       description: t("menu.drinks.guava.desc"),
       price: 14,
-      image:
-        "https://tse3.mm.bing.net/th/id/OIP.piI6_ZB3QPTm3ktOo3zCmgHaHa?pid=Api&P=0&h=180",
+      image: images["Guava"],
     },
   ];
 
   return (
     <div className="bg-black text-gray-100 font-['Poppins'] min-h-screen pt-24 pb-20 relative overflow-hidden">
-      {/* ✨ Gold glow overlay (same as Home/About) */}
       <div className="absolute inset-0 bg-gradient-to-b from-yellow-600/10 to-black"></div>
 
-      <motion.h1
-        className="text-5xl font-bold text-yellow-400 text-center mb-14 relative z-10"
-        initial={{ opacity: 0, y: 40 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1 }}
+      {/* 🍹 Menu Intro Section */}
+      <div className="relative z-10 max-w-4xl mx-auto text-center px-6 mb-16">
+        <motion.h1
+          className="text-5xl font-bold text-yellow-400 mb-6"
+          initial={{ opacity: 0, y: 40 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        >
+          {t("menu.intro.heading")}
+        </motion.h1>
+
+        <motion.p
+          className="text-gray-300 leading-relaxed mb-4"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.3, duration: 1 }}
+        >
+          {t("menu.intro.text1")}
+        </motion.p>
+
+        <motion.p
+          className="text-gray-400 leading-relaxed"
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ delay: 0.5, duration: 1 }}
+        >
+          {t("menu.intro.text2")}
+        </motion.p>
+      </div>
+
+      {/* 🥂 Menu Grid */}
+      <motion.h2
+        className="text-4xl font-bold text-yellow-400 text-center mb-10 relative z-10"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
       >
         {t("menu.title")}
-      </motion.h1>
+      </motion.h2>
 
-      {/* Menu Grid */}
       <div className="relative z-10 max-w-6xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 px-6">
-        {drinks.map((item, index) => (
-          <MenuCard key={index} {...item} />
+        {drinks.map((item) => (
+          <MenuCard
+            key={item.key}
+            name={item.name}
+            description={item.description}
+            price={item.price}
+            image={item.image}
+          />
         ))}
       </div>
     </div>

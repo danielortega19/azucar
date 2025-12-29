@@ -1,11 +1,23 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { useTranslation } from "react-i18next";
-import { Link } from "react-router-dom"; // 🧭 Add this
+import { Link } from "react-router-dom";
 import HeroSection from "../components/HeroSection";
+import { getEventImages } from "../sanity/getImageByAlt";
 
 export default function Home() {
   const { t } = useTranslation();
+  const [heroImage, setHeroImage] = useState(null);
+
+  useEffect(() => {
+    async function loadHeroImage() {
+      const img = await getEventImages("CeliaCruzHomePage");
+      if (img && img.url) {
+        setHeroImage(img.url);
+      }
+    }
+    loadHeroImage();
+  }, []);
 
   const fadeUp = {
     hidden: { opacity: 0, y: 80 },
@@ -25,8 +37,8 @@ export default function Home() {
 
       {/* Page Content */}
       <div className="relative z-10 flex flex-col justify-center pt-24">
-        {/* HERO SECTION */}
-        <HeroSection />
+        {/* HERO SECTION – now gets image from Sanity */}
+        <HeroSection heroImage={heroImage} />
 
         {/* MISSION SECTION */}
         <motion.section
@@ -94,8 +106,8 @@ export default function Home() {
               </motion.div>
             </Link>
 
-            {/* 💨 CARD 3 - CONTACT */}
-            <Link to="/contact">
+            {/* 💨 CARD 3 - Patio */}
+            <Link to="/patio">
               <motion.div
                 className="p-8 rounded-xl border border-yellow-700 bg-black/60 shadow-md hover:bg-yellow-500 hover:text-black transition transform hover:scale-105 cursor-pointer"
                 variants={fadeUp}

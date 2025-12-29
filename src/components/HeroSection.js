@@ -3,13 +3,12 @@ import { motion, useAnimation } from "framer-motion";
 import { useTranslation } from "react-i18next";
 import AzucarPhoto from "../assets/images/AzucarHomePage.png";
 
-export default function HeroSection() {
+export default function HeroSection({ heroImage }) {
   const [fadeArrow, setFadeArrow] = useState(1);
   const controls = useAnimation();
   const { t } = useTranslation();
 
   useEffect(() => {
-    // Fade out arrow when scrolling
     const handleScroll = () => {
       const scrollY = window.scrollY;
       const fade = Math.max(1 - scrollY / 120, 0);
@@ -20,7 +19,6 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    // Trigger zoom-in background animation
     controls.start({
       scale: 1.1,
       transition: { duration: 10, ease: "easeOut" },
@@ -35,14 +33,13 @@ export default function HeroSection() {
         animate={controls}
         className="absolute inset-0 bg-contain bg-center bg-no-repeat bg-black"
         style={{
-          backgroundImage: `url(${AzucarPhoto})`,
+          backgroundImage: `url(${heroImage || AzucarPhoto})`,
         }}
       />
 
-      {/* Dark overlay */}
       <div className="absolute inset-0 bg-black/60" />
 
-      {/* Text and button content */}
+      {/* Text */}
       <motion.div
         className="relative z-10 mx-auto w-[90%] sm:w-[80%] md:max-w-3xl px-4 sm:px-6"
         initial={{ opacity: 0, y: 30 }}
@@ -62,14 +59,14 @@ export default function HeroSection() {
         </button>
       </motion.div>
 
-      {/* Scroll cue with fade-out */}
+      {/* Scroll cue */}
       <motion.button
         onClick={() =>
           document
             .querySelector("#mission-section")
             ?.scrollIntoView({ behavior: "smooth" })
         }
-        className="absolute bottom-6 left-1/2  transform -translate-x-1/2 text-yellow-400 hover:text-yellow-300 transition"
+        className="absolute bottom-6 left-1/2 transform -translate-x-1/2 text-yellow-400 hover:text-yellow-300 transition"
         animate={{ y: [0, 8, 0] }}
         transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
         style={{ opacity: fadeArrow }}
@@ -82,7 +79,11 @@ export default function HeroSection() {
           stroke="currentColor"
           strokeWidth={2}
         >
-          <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7" />
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19 9l-7 7-7-7"
+          />
         </svg>
       </motion.button>
     </section>
